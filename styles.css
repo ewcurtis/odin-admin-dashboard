@@ -1,0 +1,36 @@
+.content {
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr 3fr 1fr;
+    height: 100vh;
+}
+
+.head {
+    grid-area: 1 / 2 / 2 / 4;
+    display: grid;
+    
+}
+
+.dashboard {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    background-color: aqua;
+    display: grid;
+}
+
+.projects {
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
+    display: grid;
+}
+
+.announcements {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    display: grid;
+}
+
+.trending {
+    grid-column: 3 / 4;
+    grid-row: 4 / 6;
+    display: grid;
+}
