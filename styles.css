@@ -1,36 +1,120 @@
+body {
+    background-color: rgba(220,220,220,0.5);
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    
+}
+
+/*Classes*/
+
 .content {
     display: grid;
-    grid-template: repeat(5, 1fr) / 1fr 3fr 1fr;
-    height: 100vh;
+    grid-template: repeat(5, 1fr) / 1fr 5fr 1fr;
+    height: max(700px,100vh);
 }
 
 .head {
     grid-area: 1 / 2 / 2 / 4;
     display: grid;
+    gap: 0.5rem;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(20, 20, 20, 0.25);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.top {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 0.2fr 3fr 2fr;
+
+}
+
+.top input {
+    height: 1rem;
+    
+}
+
+.bottom {
+display: grid;
+gap: 0.5rem;
+grid-template-rows: 1fr;
+grid-template-columns: 0.2fr 3fr 1fr;
+
+}
+
+.icon {
+    justify-self: end;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    
+    
+}
+
+.buttons button {
+    background-color: rgb(0, 100, 250);
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 0.5rem 1.2rem;
+    
     
 }
 
 .dashboard {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
-    background-color: aqua;
+    background-color: rgb(0, 100, 250);
+    color: white;
     display: grid;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+    font-weight: bolder;
+    padding: 2rem;
+    gap: 2rem;
+    font-size: 1.2rem;
 }
 
 .projects {
     grid-column: 2 / 3;
     grid-row: 2 / -1;
     display: grid;
+    gap: 0.5rem;
+    margin: 0 1rem;
+    
 }
 
 .announcements {
     grid-column: 3 / 4;
     grid-row: 2 / 4;
     display: grid;
+    gap: 0.5rem;
+
 }
 
 .trending {
     grid-column: 3 / 4;
     grid-row: 4 / 6;
     display: grid;
+}
+
+.main {
+    font-size: 1.2em;
+}
+
+/*IDs*/
+#search {
+    border-radius: 10px;
 }
