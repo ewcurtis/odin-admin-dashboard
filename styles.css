@@ -17,7 +17,8 @@ ul {
 .content {
     display: grid;
     grid-template: repeat(5, 1fr) / 1fr 4fr 1fr;
-    height: max(700px,100vh);
+    height: max(100vh, calc(1800px - 70vw));
+    width: max(700px, 100vw);
 }
 
 .head {
@@ -121,9 +122,19 @@ grid-template-columns: 0.25fr 2fr 1fr;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr 2fr;
     font-weight: bolder;
-    padding: 2rem;
+    padding: 3rem;
     gap: 2rem;
     font-size: 1.2rem;
+    position: relative;
+}
+
+.dashboard img {
+    color: white;
+    height: 1.2rem;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    margin: 0.1rem 2rem 0 -1.5rem;
 }
 
 .projects {
@@ -210,5 +221,11 @@ grid-template-columns: 0.25fr 2fr 1fr;
 /*IDs*/
 #search {
     border-radius: 10px;
+}
+
+#main-img {
+    margin: -0.2rem 0 0 -2.2rem;
+    height: 2rem;
+    width: auto;
 }
 
