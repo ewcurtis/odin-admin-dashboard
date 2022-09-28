@@ -198,7 +198,7 @@ grid-template-columns: 0.25fr 2fr 1fr;
 .trending {
     grid-column: 3 / 4;
     grid-row: 3 / 6;
-    margin-top: 1rem;
+    margin: 1rem 0;
     position: relative;
 }
 
