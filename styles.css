@@ -16,13 +16,12 @@ ul {
 
 .content {
     display: grid;
-    grid-template: repeat(5, 1fr) / 1fr 4fr 1fr;
-    height: max(100vh, calc(1800px - 70vw));
-    width: max(700px, 100vw);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns:  1fr 4fr 1fr;
 }
 
 .head {
-    grid-area: 1 / 2 / 2 / -1;
+    grid-area: 1 / 2 / 2 / 4;
     display: grid;
     gap: 0.5rem;
     grid-template-rows: 1fr 1fr;
@@ -116,7 +115,7 @@ grid-template-columns: 0.25fr 2fr 1fr;
 
 .dashboard {
     grid-column: 1 / 2;
-    grid-row: 1 / -1;
+    grid-row: 1 / 5;
     background-color: rgb(0, 100, 250);
     color: white;
     display: grid;
@@ -126,6 +125,7 @@ grid-template-columns: 0.25fr 2fr 1fr;
     gap: 2rem;
     font-size: 1.2rem;
     position: relative;
+    height: 5fr;
 }
 
 .dashboard img {
@@ -137,7 +137,8 @@ grid-template-columns: 0.25fr 2fr 1fr;
 
 .projects {
     grid-column: 2 / 3;
-    grid-row: 2 / -1;
+    grid-row: 2 / 4
+
 }
 
 .projects .main {
@@ -197,7 +198,7 @@ grid-template-columns: 0.25fr 2fr 1fr;
 
 .trending {
     grid-column: 3 / 4;
-    grid-row: 3 / -1;
+    grid-row: 3 / 4;
     margin: 1rem 0;
     position: relative;
 }
