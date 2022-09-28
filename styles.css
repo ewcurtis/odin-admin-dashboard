@@ -197,7 +197,7 @@ grid-template-columns: 0.25fr 2fr 1fr;
 
 .trending {
     grid-column: 3 / 4;
-    grid-row: 3 / 6;
+    grid-row: 3 / -1;
     margin: 1rem 0;
     position: relative;
 }
@@ -207,6 +207,15 @@ grid-template-columns: 0.25fr 2fr 1fr;
     width: auto;
     position: absolute;
     margin: 0.6rem 0 -0.5rem -1.5rem;
+}
+
+.trending-grid {
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.trending-grid .side-card {
+    
+    margin-bottom: 1rem;
 }
 
 .side-card ul {
