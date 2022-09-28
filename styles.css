@@ -177,7 +177,7 @@ grid-template-columns: 0.25fr 2fr 1fr;
 }
 
 .side-card p {
-    color: rgb(200,200,200);
+    color: rgb(140,140,140);
     font-size: 0.6rem;
     flex: 1 1 auto;
     margin: 0;
@@ -188,7 +188,18 @@ grid-template-columns: 0.25fr 2fr 1fr;
 
 .trending {
     grid-column: 3 / 4;
-    grid-row: 4 / 6;
+    grid-row: 3 / 6;
+    margin-top: 1rem;
+}
+
+.trending img {
+    height: 1rem;
+    width: auto;
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
 }
 
 .main {
