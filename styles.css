@@ -129,10 +129,8 @@ grid-template-columns: 0.25fr 2fr 1fr;
 }
 
 .dashboard img {
-    color: white;
     height: 1.2rem;
     width: auto;
-    display: inline-block;
     position: absolute;
     margin: 0.1rem 2rem 0 -1.5rem;
 }
@@ -201,17 +199,24 @@ grid-template-columns: 0.25fr 2fr 1fr;
     grid-column: 3 / 4;
     grid-row: 3 / 6;
     margin-top: 1rem;
+    position: relative;
 }
 
 .trending img {
     height: 1rem;
     width: auto;
+    position: absolute;
+    margin: 0.6rem 0 -0.5rem -1.5rem;
 }
 
-.trending-grid {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr;
+.side-card ul {
+    margin-left: 2rem;
 }
+
+.side-card li {
+    margin-top: 0.2rem;
+}
+
 
 .main {
     font-size: 1.2em;
